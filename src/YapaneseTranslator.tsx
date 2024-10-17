@@ -330,7 +330,6 @@ const YAP_QUESTIONS = [
   "What's the gas fee for sending good vibes on the Ethereum network?",
   "If you stake your crypto long enough, does it eventually turn into a fine wine?",
   "How many YapFi protocols does it take to decentralize a light bulb?",
-  "If you whisper 'Satoshi' three times in front of a mirror, does your portfolio suddenly moon?",
   "What's the carbon footprint of a single 'gm' tweet?",
 ];
 
