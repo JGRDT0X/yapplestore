@@ -10,9 +10,9 @@ interface MemeTemplate {
 
 // Add some sample meme templates
 const memeTemplates: MemeTemplate[] = [
-  { id: 'template1', name: 'Drake', url: '/meme-templates/dark.jpg' },
-  { id: 'template2', name: 'Distracted Boyfriend', url: '/meme-templates/chien content.jpg' },
-  { id: 'template3', name: 'Drake', url: '/meme-templates/dark.jpg' },
+  { id: 'template1', name: 'Drake', url: '/meme-templates/dog.jpg' },
+  { id: 'template2', name: 'Distracted Boyfriend', url: '/meme-templates/dark.jpg' },
+  { id: 'template3', name: 'Two Buttons', url: '/meme-templates/dog.jpg' },
   // Add more templates as needed
 ];
 
@@ -78,10 +78,11 @@ function MemeGenerator() {
       });
   }
 
-  function handleTemplateSelect(template: { url: string }) {
+  function handleTemplateSelect(template: MemeTemplate) {
+    const imageUrl = new URL(template.url, import.meta.url).href;
     setMeme(prevMeme => ({
       ...prevMeme,
-      image: template.url,
+      image: imageUrl,
     }));
   }
 
@@ -157,7 +158,7 @@ function MemeGenerator() {
               onClick={() => handleTemplateSelect(template)}
               className="p-2 border border-black rounded hover:bg-gray-100"
             >
-              <img src={template.url} alt={template.name} className="w-full h-auto" />
+              <img src={new URL(template.url, import.meta.url).href} alt={template.name} className="w-full h-auto" />
               <p className="mt-1 text-xs text-center">{template.name}</p>
             </button>
           ))}
