@@ -354,7 +354,7 @@ export default function YapaneseTranslator() {
           <CardContent className="space-y-6 p-6">
             <h1 className=" text-base text-center font-bold mb-16">🗣️🗣️🗣️<br/>yapanese translator</h1>
             <div className="relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-50 bg-[#0000FF]">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-50 bg-[#000]">
                 english
               </Badge>
               <div className="relative">
@@ -363,10 +363,11 @@ export default function YapaneseTranslator() {
                   placeholder="my japanese peeps told me about the fantastic yap token lore."
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  className="w-full h-40 p-4 border rounded-none resize-none italic pt-8 text-center"
+                  className="w-full h-40 p-4 border rounded-none resize-none italic pt-8 text-center border-black"
                 />
                 <div className="absolute bottom-4 right-4 flex space-x-2">
                   <Button 
+                  className='bg-[#0000FF]'
                     onClick={handleTranslate}
                   >
                     translate
@@ -375,19 +376,19 @@ export default function YapaneseTranslator() {
               </div>
             </div>
             <div className="relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2  bg-[#0000FF]">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2  bg-[#000]">
                 yapanese
               </Badge>
               <textarea
                 id="yapanese-output"
                 value={output}
                 readOnly
-                className="w-full h-40 p-4 border text-[#0000FF] rounded-none bg-gray-100 italic pt-8 text-center resize-none"
+                className="w-full h-40 p-4 border border-black text-[#0000FF] rounded-none bg-black-100 italic pt-8 text-center resize-none"
               />
               <div className="absolute bottom-4 right-4">
                 <Button 
                   onClick={generateYapQuestion}
-                  className="bg-black text-white hover:bg-gray-300"
+                  className="bg-[#0000FF] text-white hover:bg-gray-300"
                 >
                   yap generator
                 </Button>
@@ -396,7 +397,7 @@ export default function YapaneseTranslator() {
           </CardContent>
         </div>
         <div className="text-sm text-left">
-          <Card className="w-1/4 fixed top-0 right-0 h-screen rounded-none !p-0 sm:block hidden shadow-none border-t-0">
+          <Card className="w-1/4 fixed top-0 right-0 h-screen rounded-none !p-0 sm:block hidden shadow-none  border-black border-t-0">
             <CardContent>
               <ScrollArea className="h-screen ">
               <h2 className="text-xl mt-8">🗣️</h2>
@@ -407,7 +408,7 @@ export default function YapaneseTranslator() {
                   <div key={index} className="mb-4">
                     <h3 className="text-[#0000FF] text-sm font-semibold">{item.word}</h3>
                     <p className="text-sm text-gray-500">{item.pronunciation} ({item.gender})</p>
-                    <p className="mt-1">{item.definition}</p>
+                    <p className="hidden mt-1">{item.definition}</p>
                   </div>
                 ))}
               </ScrollArea>

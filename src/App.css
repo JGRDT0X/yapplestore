@@ -42,3 +42,27 @@
     --radius: 0.5rem;
   }
 }
+
+
+.text-stroke-1 {
+  -webkit-text-stroke: 3px black;
+}
+
+.text-stroke-2 {
+  -webkit-text-stroke: 3px black;
+}
+
+.text-stroke-3 {
+  -webkit-text-stroke: 3px black;
+}
+
+#memespace h2 {
+font-size: 3em;
+-webkit-text-stroke: 5px black;
+paint-order: stroke fill;
+
+}
+
+.fix-stroke {
+  paint-order: stroke fill;
+}
