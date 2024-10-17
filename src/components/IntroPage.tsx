@@ -10,13 +10,13 @@ function IntroPage() {
           <div className="w-24 h-24 bg-[#f11] rounded-sm flex items-center justify-center mb-2">
             <span className="text-4xl">🗣️</span>
           </div>
-          <span className="text-sm font-medium text-black italic">Yapanese Translator</span>
+          <span className="text-sm font-medium text-black italic">yapanese translator</span>
         </Link>
         <Link to="/meme" className="flex flex-col items-center">
           <div className="w-24 h-24 bg-[#2600ff] rounded-sm flex items-center justify-center mb-2">
             <span className="text-4xl">🗣️</span>
           </div>
-          <span className="text-sm font-medium text-black italic">Yapper Memegen</span>
+          <span className="text-sm font-medium text-black italic">meme yapper</span>
         </Link>
       </div>
     </div>
