@@ -8,13 +8,12 @@ interface MemeTemplate {
   url: string;
 }
 
-// Add some sample meme templates
-const memeTemplates: MemeTemplate[] = [
-  { id: 'template1', name: 'Drake', url: '/meme-templates/dog.jpg' },
-  { id: 'template2', name: 'Distracted Boyfriend', url: '/meme-templates/dark.jpg' },
-  { id: 'template3', name: 'Two Buttons', url: '/meme-templates/dog.jpg' },
-  // Add more templates as needed
-];
+// Update the meme templates array
+const memeTemplates: MemeTemplate[] = Array.from({ length: 74 }, (_, i) => ({
+  id: `template${i + 1}`,
+  name: `Yap Meme ${i + 1}`,
+  url: `/meme-templates/yapmeme_${i + 1}.jpg`
+}));
 
 interface Meme {
   topText: string;
@@ -150,12 +149,12 @@ function MemeGenerator() {
 
       <div className="w-full max-w-md mb-6 space-y-4">
         <h5 className="text-center">Choose a template</h5>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-4 gap-2">
           {templates.map(template => (
             <button
               key={template.id}
               onClick={() => handleTemplateSelect(template)}
-              className="p-2 border border-black rounded hover:bg-gray-100"
+              className="p-1 border border-black rounded hover:bg-gray-100"
             >
               <img src={template.url} alt={template.name} className="w-full h-auto" />
               <p className="mt-1 text-xs text-center">{template.name}</p>
