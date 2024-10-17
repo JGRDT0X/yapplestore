@@ -79,10 +79,9 @@ function MemeGenerator() {
   }
 
   function handleTemplateSelect(template: MemeTemplate) {
-    const imageUrl = new URL(template.url, import.meta.url).href;
     setMeme(prevMeme => ({
       ...prevMeme,
-      image: imageUrl,
+      image: template.url,
     }));
   }
 
@@ -158,7 +157,7 @@ function MemeGenerator() {
               onClick={() => handleTemplateSelect(template)}
               className="p-2 border border-black rounded hover:bg-gray-100"
             >
-              <img src={new URL(template.url, import.meta.url).href} alt={template.name} className="w-full h-auto" />
+              <img src={template.url} alt={template.name} className="w-full h-auto" />
               <p className="mt-1 text-xs text-center">{template.name}</p>
             </button>
           ))}
