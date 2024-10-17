@@ -173,13 +173,13 @@ const YAP_LEXICON = [
       "word": "Yapanese",
       "pronunciation": "/ya-puh-neez/",
       "gender": "neut",
-      "definition": "The yapper language whispered by Macronesian"
+      "definition": "The yapper's language whispered by Macronesian"
     },
     {
       "word": "Yapital",
       "pronunciation": "/ya-pi-tal/",
       "gender": "masc",
-      "definition": "The currency of the Yap empire, traded daily in the degen underworld. More stable than your average memecoin."
+      "definition": "Yap currency of the Macronesian empire. More stable than rial iranien."
     },
     {
       "word": "Yapture",
@@ -353,9 +353,9 @@ export default function YapaneseTranslator() {
       <div className="flex w-full max-w-5xl gap-6">
         <div className="w-full md:w-2/3">
           <CardContent className="space-y-6 p-6">
-            <h1 className=" text-base text-center mb-8">yapanese translator</h1>
+            <h1 className=" text-base text-center font-bold mb-16">🗣️🗣️🗣️<br/>yapanese translator</h1>
             <div className="relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-50 bg-blue-700">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-50 bg-[#0000FF]">
                 english
               </Badge>
               <div className="relative">
@@ -376,14 +376,14 @@ export default function YapaneseTranslator() {
               </div>
             </div>
             <div className="relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2  bg-blue-700">
-                Yapanese
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2  bg-[#0000FF]">
+                yapanese
               </Badge>
               <textarea
                 id="yapanese-output"
                 value={output}
                 readOnly
-                className="w-full h-40 p-4 border text-blue-700 rounded-none bg-gray-100 italic pt-8 text-center resize-none"
+                className="w-full h-40 p-4 border text-[#0000FF] rounded-none bg-gray-100 italic pt-8 text-center resize-none"
               />
               <div className="absolute bottom-4 right-4">
                 <Button 
@@ -400,11 +400,13 @@ export default function YapaneseTranslator() {
           <Card className="w-1/4 fixed top-0 right-0 h-screen rounded-none !p-0 sm:block hidden shadow-none border-t-0">
             <CardContent>
               <ScrollArea className="h-screen ">
-              <h2 className="text-xl italic my-8">Yapxicon</h2>
+              <h2 className="text-xl mt-8">🗣️</h2>
+              <h2 className="text-xl italic mb-8">Yapxicon</h2>
+
 
                 {YAP_LEXICON.map((item, index) => (
                   <div key={index} className="mb-4">
-                    <h3 className="text-blue-600 text-sm font-semibold">{item.word}</h3>
+                    <h3 className="text-[#0000FF] text-sm font-semibold">{item.word}</h3>
                     <p className="text-sm text-gray-500">{item.pronunciation} ({item.gender})</p>
                     <p className="mt-1">{item.definition}</p>
                   </div>
