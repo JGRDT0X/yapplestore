@@ -25,7 +25,7 @@ const SPECIAL_WORDS: { [key: string]: string } = {
   'cross-chain': 'yapcross-chain',
   'cryptocurrency': 'yaptopcurrency',
   'decentralized': 'yapcentralized',
-  'DeFi': 'YapFi',
+  'DeFi': 'Yap-Fi',
   'derivative': 'yaperivative',
   'diamond': 'yapmond',
   'dividend': 'yapidend',
@@ -360,7 +360,7 @@ export default function YapaneseTranslator() {
               <div className="relative">
                 <textarea
                   id="english-input"
-                  placeholder="my japanese peeps told me about the fantastic yap token lore."
+                  placeholder="DeFi application on the blockchain."
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   className="w-full h-40 p-4 border rounded-none resize-none italic pt-8 text-center border-black"

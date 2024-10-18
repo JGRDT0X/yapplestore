@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css'
-import YapaneseTranslator from './YapaneseTranslator';
+import YapaneseTranslator from './components/YapaneseTranslator';
 import MemeGenerator from './components/MemeGenerator';
 import IntroPage from './components/IntroPage';
 
