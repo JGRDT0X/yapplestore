@@ -52,4 +52,8 @@ export default tseslint.config({
   },
 })
 ```
+<<<<<<< HEAD
 >>>>>>> 42c08e7 (init)
+=======
+# yapanese
+>>>>>>> d3ea7b6 (first commit)
