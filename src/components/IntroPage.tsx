@@ -75,7 +75,7 @@ function IntroPage() {
 
             <div className='py-2 pr-2 flex bg-[#DCDCDC]'>
             <div className="text-left text-xs font-bold text-[#454545] p-1">
-            Contract:
+            Contract :
             </div>
             <div className="bg-[#6299FE] w-full text-left text-xs text-[#454545]  border border-black shadow-[inset_2px_2px_0px_0px_#5B70A5] p-1 font-bold truncate">
               3gcdoCBQMKAFVopsQ377X7JhkcNPg9fwPY4eW46Apump
