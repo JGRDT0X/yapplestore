@@ -143,10 +143,10 @@ function IntroPage() {
 
         {/* FOOTER */}
         <div className="flex justify-between text-sm bg-black w-full pt-1.5 px-4 h-8">
-          <a className="hover:underline text-white" href="www.yap.capital/" target="_blank" rel="noopener noreferrer">yap.capital</a>
-          <a className="hover:underline text-white" href="www.yap.ing/" target="_blank" rel="noopener noreferrer">yap.ing</a>
-          <a className="hover:underline text-white" href="www.yap.plus/" target="_blank" rel="noopener noreferrer">yap.plus</a>
-          <a className="hover:underline text-white" href="www.yap.pay/" target="_blank" rel="noopener noreferrer">yap.pay</a>
+          <a className="hover:underline text-white" href="https://www.yap.capital/" target="_blank" rel="noopener noreferrer">yap.capital</a>
+          <a className="hover:underline text-white" href="https://www.yap.ing/" target="_blank" rel="noopener noreferrer">yap.ing <sup>soon</sup></a>
+          <a className="hover:underline text-white" href="https://www.yap.shopping//" target="_blank" rel="noopener noreferrer">yap.shopping</a>
+          <a className="hover:underline text-white" href="#" target="_blank" rel="noopener noreferrer">yap.pay <sup>soon</sup></a>
 
           <img src="/yapplestore_wmin.png" alt="Apple logo" className='p-1.5 -mt-1.5' />
         </div>
