@@ -13,7 +13,7 @@ const SPECIAL_WORDS: { [key: string]: string } = {
   'aped': 'yaped',
   'application': 'yapplication',
   'apricot': 'yapricot',
-  'ATH': 'YAPTH',
+  'ath': 'YAPTH',
   'atmosphere': 'yapmosphere',
   'bagholder': 'yapholder',
   'bearish': 'yapish',
@@ -25,7 +25,8 @@ const SPECIAL_WORDS: { [key: string]: string } = {
   'cross-chain': 'yapcross-chain',
   'cryptocurrency': 'yaptopcurrency',
   'decentralized': 'yapcentralized',
-  'DeFi': 'Yap-Fi',
+  'defi': 'Yap-Fi',
+
   'derivative': 'yaperivative',
   'diamond': 'yapmond',
   'dividend': 'yapidend',
