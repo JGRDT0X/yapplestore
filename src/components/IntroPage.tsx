@@ -73,7 +73,7 @@ function IntroPage() {
         <div className="flex items-center m-1">
           <div className="flex-grow border-l border-t border-b border-black shadow-inner">
 
-            <div className='p-2 flex bg-[#DCDCDC]'>
+            <div className='py-2 pr-2 flex bg-[#DCDCDC]'>
             <div className="text-left text-xs font-bold text-[#454545] p-1">
             Contract:
             </div>
@@ -116,13 +116,13 @@ function IntroPage() {
                     
                     return isActive ? (
                     <Link to={index === 0 ? "/meme" : "/translator"} key={index} className="text-center  hover:bg-gray-200">
-                        <img src={icons[index]} alt="" width={60} height={60} className="mx-auto mb-1 " />
-                        <p className="text-sm font-bold text-[#2222ff]">{item}</p>
+                        <img src={icons[index]} alt="" width={40} height={40} className="mx-auto mb-1 " />
+                        <p className="text-xs font-bold text-[#2222ff]">{item}</p>
                     </Link>
                     ) : (
                     <div key={index} className="text-center hover:bg-gray-200">
-                        <img src={icons[index]} alt="" width={60} height={60} className="mx-auto mb-1 opacity-50" />
-                        <p className="text-sm font-bold text-gray-400">{item}</p>
+                        <img src={icons[index]} alt="" width={40} height={40} className="mx-auto mb-1 opacity-50" />
+                        <p className="text-xs font-bold text-gray-400">{item}</p>
                     </div>
                     );
                 })}
