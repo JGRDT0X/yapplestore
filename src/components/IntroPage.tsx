@@ -55,7 +55,7 @@ function IntroPage() {
       </div> */}
 
 
-    <div className="bg-[#DCDCDC] pl-1  pr-1 pb-1 w-full md:3/4 lg:w-2/3 xl:w-1/2 mx-auto font-reg border border-black shadow-[5px_5px_0px_0px_#1a202c]">
+    <div className="bg-[#DCDCDC] pl-1  pr-1 pb-1 w-full md:3/4 lg:w-2/3 xl:w-1/2 mx-auto font-reg border border-black shadow-[1px_1px_0px_0px_#1a202c]">
     
 
     <div className="flex items-center justify-between p-1">
