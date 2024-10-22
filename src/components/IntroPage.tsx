@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 function IntroPage() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-blue-50" style={{ backgroundImage: 'url(/yapmac_bg.png)', backgroundRepeat: 'repeat' }}>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-blue-50" style={{ backgroundImage: 'url(/yapmac_bg.png)', backgroundRepeat: 'repeat' }}>
     {/*
       <div className="flex items-center my-12">
         <img src="/yapplestore.png" alt="Yapple Store Logo" className="w-5" />
@@ -89,7 +89,7 @@ function IntroPage() {
         
         <div className='p-4'>
             <div className="flex flex-wrap  mb-4">
-            <div className="w-full md:w-1/3 flex justify-center"> {/* Added flex and justify-center */}
+            <div className="w-full md:w-1/3 flex justify-center"> 
                 <img 
                 src="/yapintro.png" 
                 alt="Person with sunglasses" 
@@ -135,20 +135,34 @@ function IntroPage() {
 
         <h1 className="text-[70px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px] mb-4 font-greg tracking-tighter">The Yapple Store</h1>
         
-        <div className="hidden  sm:grid grid-cols-3 gap-1 my-4">
+        <div className="hidden sm:grid grid-cols-3 gap-1 my-4">
           <div className="flex flex-col items-center">
             <img src="/yapplekit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 1" width={100} height={100} />
-            <p className="text-base font-bol">Powered Yapintosh Gen1</p>
+            <p className="text-xs font-bold text-[#000]">Powered Yapintosh Gen1</p>
           </div>
           <div className="flex flex-col items-center">
             <img src="/yapplekit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 2" width={100} height={100} />
-            <p className="text-base font-bol">Powered Yapintosh Gen2</p>
+            <p className="text-xs font-bold text-[#000]">Powered Yapintosh Gen2</p>
           </div>
           <div className="flex flex-col items-center">
             <img src="/yapplekit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 3" width={100} height={100} />
-            <p className="text-base font-bol">Powered Yapintosh Gen3</p>
+            <p className="text-xs font-bold text-[#000]">Powered Yapintosh Gen3</p>
           </div>
         </div>
+        
+  {/* LINKS
+        <div className="hidden sm:grid grid-cols-3 gap-1 my-4 mx-60">
+          <div className="flex flex-col items-center">
+          <a className="hover:underline text-xs" href="https://www.yap.capital/" target="_blank" rel="noopener noreferrer">yap.capital</a>
+          </div>
+          <div className="flex flex-col items-center">
+          <a className="hover:underline text-xs" href="https://www.yap.capital/" target="_blank" rel="noopener noreferrer">yap.capital</a>
+          </div>
+          <div className="flex flex-col items-center">
+          <a className="hover:underline text-xs" href="https://www.yap.capital/" target="_blank" rel="noopener noreferrer">yap.capital</a>
+          </div>
+        </div>
+    */}     
 
         {/* FOOTER */}
         <div className="flex justify-between text-sm bg-black w-full pt-1.5 px-4 h-8">
