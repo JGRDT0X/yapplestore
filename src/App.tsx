@@ -3,10 +3,13 @@ import './App.css'
 import YapaneseTranslator from './components/YapaneseTranslator';
 import MemeGenerator from './components/MemeGenerator';
 import IntroPage from './components/IntroPage';
+import { Analytics } from "@vercel/analytics/react";
+
 
 function App() {
   return (
     <Router>
+      <Analytics/>
       <div className="App">
         <Routes>
           <Route path="/" element={<IntroPage />} />
