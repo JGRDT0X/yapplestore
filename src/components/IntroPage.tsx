@@ -55,7 +55,7 @@ function IntroPage() {
       </div> */}
 
 
-    <div className="bg-[#DCDCDC] pl-1  pr-1 pb-1 w-full md:3/4 lg:w-2/3 xl:w-1/2 mx-auto font-reg border border-black shadow-[1px_1px_0px_0px_#1a202c]">
+    <div className="bg-[#DCDCDC] pl-1  pr-1 pb-1 w-full md:3/4 lg:w-2/3 xl:w-1/2 mx-auto font-reg border sm:min-h-screen border-black shadow-[1px_1px_0px_0px_#1a202c]">
     
 
     <div className="flex items-center justify-between p-1">
@@ -83,23 +83,22 @@ function IntroPage() {
             </div>
           </div>
           <Button size="icon" variant="outline" className="hidden sm:grid h-11 w-11 p-1 border border-black">
-            <img src="/yapplestore.png" alt="Refresh" width={20} height={20} />
+            <img src="/yapplestore_bit.png" alt="Refresh" width={20} height={20} />
           </Button>
         </div>
         
         <div className='p-4'>
             <div className="flex flex-wrap  mb-4">
-            <div className="w-full md:w-1/3 flex justify-center"> 
+            <div className="w-full md:w-1/3 flex justify-center items-center"> 
                 <img 
-                src="/yapintro.png" 
+                src="/yapintro_0.jpeg" 
                 alt="Person with sunglasses" 
-                width={250} 
-                height={250} 
+                width={170} 
                 className="mb-8 md:mb-0 text-center mx-0"
                 />
             </div>
-            <div className="w-full md:w-2/3">
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-2 gap-y-8">
+            <div className="w-full md:w-2/3 flex justify-center items-center">
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-10 gap-y-8">
                 {['YapMeme', 'Yapanese', 'YapPay', 'YapFlix', 'YapMoney', 'YapperNews', 'Yap+', 'Special Deals'].map((item, index) => {
                     const icons = [
                     "/ico/ico4.png",
@@ -120,7 +119,7 @@ function IntroPage() {
                         <p className="text-xs font-bold text-[#2222ff]">{item}</p>
                     </Link>
                     ) : (
-                    <div key={index} className="text-center hover:bg-gray-200">
+                    <div key={index} className="text-center hover:bg-gray-200  cursor-wait">
                         <img src={icons[index]} alt="" width={40} height={40} className="mx-auto mb-1 opacity-50" />
                         <p className="text-xs font-bold text-gray-400">{item}</p>
                     </div>
@@ -133,19 +132,19 @@ function IntroPage() {
         </div>
 
 
-        <h1 className="text-[70px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px] mb-4 font-greg tracking-tighter">The Yapple Store</h1>
+        <h1 className="text-[70px] lg:text-[90px] xl:text-[100px] 2xl:text-[120px] mb-8 font-greg tracking-tighter">The Yapple Store</h1>
         
         <div className="hidden sm:grid grid-cols-3 gap-1 my-4">
           <div className="flex flex-col items-center">
-            <img src="/yapplekit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 1" width={100} height={100} />
+            <img src="/yapplekit_bit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 1" width={100} height={100} />
             <p className="text-xs font-bold text-[#000]">Powered Yapintosh Gen1</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/yapplekit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 2" width={100} height={100} />
+            <img src="/yapplekit_bit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 2" width={100} height={100} />
             <p className="text-xs font-bold text-[#000]">Powered Yapintosh Gen2</p>
           </div>
           <div className="flex flex-col items-center">
-            <img src="/yapplekit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 3" width={100} height={100} />
+            <img src="/yapplekit_bit.png" className='spin-animation mb-4 sm:w-52 sm:h-52' alt="Visual 3" width={100} height={100} />
             <p className="text-xs font-bold text-[#000]">Powered Yapintosh Gen3</p>
           </div>
         </div>
